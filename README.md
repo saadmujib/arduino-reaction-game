@@ -1,10 +1,28 @@
 # Arduino Reaction Game
 
-A small reaction-time game built using an Arduino UNO, two buttons, two LEDs, a buzzer, and a 16x2 I2C LCD.
+A small reaction-time game I built using:
+- Arduino UNO
+- I2C LCD (16x2)
+- Two push buttons
+- Red + Green LEDs
+- Buzzer
 
-Players wait for the LED to turn green and press their button as fast as possible. Pressing early counts as a cheat and gives a point to the other player. The game runs for three rounds and shows the final winner at the end, although the winner is already decided after the end of second round :p.
+## How it works
+The game has 3 rounds.  
+Both players wait for the LED to turn green.  
+If someone presses early, the other player gets the point.  
+Times are shown on the LCD, and final results appear at the end, although the winner is already decided after the end of second round :p.
+
+## Features
+- Cheat detection
+- Round-based scoring
+- LED and buzzer feedback
 
 ## Video Demo
 Link: https://youtu.be/m97oKhuAmAk
 
-The code and wiring are included in this repository.
+## Code
+The full code is in the `.ino` file in this repository.
+
+
+
